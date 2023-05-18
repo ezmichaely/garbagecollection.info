@@ -1,0 +1,42 @@
+.data-table {
+    @include mp(0px);
+
+    @include breakpoint-tablet {
+        @include px(0px);
+        width: 100%;
+    }
+
+    table {
+        thead {
+            tr {
+                th {
+                    text-align: center;
+                    vertical-align: middle;
+                    color: $secondary;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    @include mp(0px);
+                    @include px(5px);
+                    @include py(10px);
+
+                    vertical-align: middle;
+
+                    &.center {
+                        @include px(0px);
+
+                        text-align: center;
+
+                        button {
+                            @include m(5px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

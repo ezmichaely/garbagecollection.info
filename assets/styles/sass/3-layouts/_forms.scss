@@ -1,0 +1,48 @@
+.login-form {
+    overflow: hidden;
+
+    @include breakpoint-mobile {
+        @include mx(0);
+        width: 100%;
+    }
+
+    form {
+        @include border-rad(5px);
+        @include border(1px, solid, $primary);
+
+        .form-title {
+            @include border-top-rad(5px);
+
+            @include p(20px);
+            background-color: $secondary;
+            @include flex-center;
+            flex-direction: column;
+
+            img {
+                height: 50px;
+            }
+        }
+
+        .hr {
+            height: 2px;
+            width: 100%;
+            background-color: $primary;
+        }
+
+        .form-body {
+            @include p(20px);
+            background-color: $secondary;
+            width: 100%;
+            @include border-bot-rad(5px);
+
+            .form-group {
+                .help-block {
+                    color: $red;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+}

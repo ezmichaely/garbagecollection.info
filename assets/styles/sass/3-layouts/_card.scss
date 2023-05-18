@@ -1,0 +1,32 @@
+.card {
+    width: 40%;
+    @include my(2%);
+    @include border(1px, solid, $gray-500);
+    @include border-l(3px, solid, $primary);
+
+    @include breakpoint-tablet {
+        width: 80%;
+    }
+
+    .card-header {
+        @include p(10px);
+        @include flex-center;
+        background-color: $secondary;
+
+        span {
+            @include pl(10px);
+        }
+
+    }
+
+    .card-body {
+        @include p(10px);
+
+        .card-text {
+            @include flex-center;
+            font-family: $text;
+            font-size: 4rem;
+            font-weight: 700;
+        }
+    }
+}

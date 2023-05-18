@@ -1,0 +1,17 @@
+.active {
+  background-color: $secondary;
+
+  i,
+  span {
+    color: $gray-900;
+  }
+}
+
+a:hover {
+  background-color: $secondary;
+
+  i,
+  span {
+    color: $gray-900;
+  }
+}

@@ -1,0 +1,45 @@
+@mixin fullImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+// Clearfix
+@mixin clearfix() {
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+
+// WIDTH && HEIGHT
+@mixin wh($size, $size1) {
+  width: $size;
+  height: $size1;
+}
+
+@mixin box($size) {
+  width: $size !important;
+  height: $size !important;
+}
+
+
+//dropdown
+@mixin dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: $white;
+  @include border(1px, solid, $gray-300);
+
+  &::after {
+    z-index: -1 !important;
+    content: "";
+    top: -8px;
+    position: absolute;
+    background-color: $blue;
+    transform: rotate(45deg);
+    @include border(2px, solid, $gray-300);
+  }
+}

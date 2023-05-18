@@ -1,0 +1,170 @@
+main#admin {
+    @include transition(0.5s);
+    overflow-y: auto;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    min-height: calc(100vh - 36px);
+    @include mp(0px);
+
+    aside {
+        width: 20%;
+        background-color: $gray-900;
+        min-height: calc(100vh - 36px);
+
+        .brand {
+            @include py(10px);
+            @include flex-center;
+
+            .brand-name {
+                display: none;
+                @include transition(.05s);
+                // height: 35px;
+
+                @include breakpoint-tablet-up {
+                    display: block;
+                }
+
+            }
+
+            .brand-logo {
+                display: none;
+                @include transition(.05s);
+
+                @include breakpoint-tablet {
+                    display: block;
+                }
+            }
+
+            img {
+                height: 40px;
+            }
+        }
+
+        .sidebar {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            @include breakpoint-tablet {
+                justify-content: space-evenly;
+            }
+
+            a {
+                @include flex-start;
+                @include py(15px);
+                @include px(20px);
+                color: $primary;
+                font-size: 1.1rem;
+                font-family: $title2 !important;
+                @include border-b(1px, solid, $gray-500);
+
+                @include breakpoint-tablet {
+                    @include flex-evenly;
+                    flex-direction: column;
+                    @include py(10px);
+                    @include px(0px);
+                    text-align: center;
+                }
+
+                @include breakpoint-mobile {
+                    @include py(25px);
+                }
+
+                &:hover {
+                    background-color: $secondary;
+                    color: $gray-900;
+
+                }
+
+                i {
+                    width: 30px;
+
+                    @include breakpoint-tablet {
+                        @include py(5px);
+                    }
+                }
+
+                span {
+                    font-family: $title2;
+                    @include transition(0.5s);
+
+                    @include breakpoint-mobile {
+                        display: none;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .main-container {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        width: 80%;
+
+        .top-content {
+            display: block;
+            background-color: $gray-900;
+
+            .top {
+                @include flex-between;
+                @include px(20px);
+                flex-direction: row;
+                // border: 1px solid red;
+                height: 60px;
+                color: $secondary;
+
+                .icon-toggler {
+                    @include py(5px);
+                    @include px(10px);
+                    @include border(1px, solid, $secondary);
+                    @include border-rad(5px);
+                    cursor: pointer;
+                }
+
+                .title {
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+
+                .button {
+                    .btn {
+                        color: $yellow;
+
+                        &:hover {
+                            color: $gray-900;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-content {
+            @include p(2%);
+            overflow-x: hidden;
+
+            @include breakpoint-tablet {
+                @include px(1%);
+            }
+
+            .dashboard {
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .collection,
+            .barangay,
+            .day,
+            .time {
+                .add-button {
+                    @include mb(20px);
+                }
+            }
+        }
+    }
+}

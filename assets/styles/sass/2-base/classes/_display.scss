@@ -1,0 +1,103 @@
+.hidden {
+  @include transition(0.2s);
+  display: none !important;
+}
+
+.block {
+  @include transition(0.2s);
+  display: block !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.clearfix {
+  @include clearfix();
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.center {
+  align-items: center;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.off {
+  background-color: transparent;
+
+  i {
+    color: $secondary;
+  }
+
+  &:hover {
+    background-color: $secondary;
+
+    i {
+      color: $gray-900;
+    }
+  }
+}
+
+.on {
+  background-color: $secondary;
+
+  i {
+    color: $gray-900;
+  }
+
+  &:hover {
+    background-color: transparent;
+
+    i {
+      color: $secondary;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+Pwde ka maka create new account ani, silbi 1 type of user rani.
+This app/webapp just for educational purpose.
+
+ACOUNT :
+username : admin
+password : @admin
+
+dbname: garbagecollection
+db sql file located at: app/database/

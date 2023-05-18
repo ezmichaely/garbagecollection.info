@@ -1,0 +1,176 @@
+button {
+    i {}
+
+    span {
+        // @include p(5px);
+    }
+}
+
+.btn {
+    color: $gray-900;
+    font-weight: 600;
+}
+
+.btn-primary {
+    @include border(1px, solid, $blue);
+    color: $white;
+
+    &:hover {
+        background-color: transparent;
+        color: $blue;
+    }
+}
+
+.btn-secondary {
+    @include border(1px, solid, $gray-500);
+    color: $white;
+
+    &:hover {
+        background-color: transparent;
+        color: $gray-900;
+    }
+}
+
+.btn-success {
+    @include border(1px, solid, $green);
+    color: $white;
+
+
+    &:hover {
+        background-color: transparent;
+        color: $green;
+    }
+}
+
+.btn-info {
+    @include border(1px, solid, $cyan);
+
+    &:hover {
+        background-color: transparent;
+        color: $cyan;
+
+    }
+}
+
+.btn-warning {
+    @include border(1px, solid, $yellow);
+
+
+    &:hover {
+        background-color: transparent;
+        color: $yellow;
+    }
+}
+
+
+.btn-danger {
+    @include border(1px, solid, $red);
+    color: $white;
+
+    &:hover {
+        background-color: transparent;
+        color: $red;
+    }
+}
+
+
+.btn-light {
+    @include border(1px, solid, $gray-100);
+
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.btn-dark {
+    @include border(1px, solid, $gray-900);
+
+
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+
+.btn-outline-primary {
+    @include border(1px, solid, $blue);
+    background-color: transparent;
+
+    &:hover {
+        background-color: $blue;
+    }
+}
+
+.btn-outline-secondary {
+    @include border(1px, solid, $gray-500);
+    background-color: transparent;
+
+    &:hover {
+        background-color: $gray-500;
+
+    }
+}
+
+.btn-outline-success {
+    @include border(1px, solid, $green);
+    background-color: transparent;
+
+    &:hover {
+
+        background-color: $green;
+    }
+}
+
+.btn-outline-info {
+    @include border(1px, solid, $cyan);
+    background-color: transparent;
+
+    &:hover {
+        background-color: $cyan;
+
+    }
+}
+
+.btn-outline-warning {
+    @include border(1px, solid, $yellow);
+
+    background-color: transparent;
+
+    &:hover {
+        background-color: $yellow;
+
+    }
+}
+
+
+.btn-outline-danger {
+    @include border(1px, solid, $red);
+    background-color: transparent;
+
+    &:hover {
+        background-color: $red;
+
+    }
+}
+
+
+.btn-outline-light {
+    @include border(1px, solid, $gray-100);
+    background-color: transparent;
+
+    &:hover {
+        background-color: $gray-100;
+
+    }
+}
+
+.btn-outline-dark {
+    @include border(1px, solid, $gray-900);
+    background-color: transparent;
+
+    &:hover {
+        background-color: $gray-900;
+        color: $white;
+
+    }
+}

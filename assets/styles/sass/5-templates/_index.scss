@@ -1,0 +1,15 @@
+main#index {
+    overflow-y: auto;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    @include my(20px);
+    min-height: calc(100vh - 158px);
+    // border: 1px solid red;
+
+    .title {
+        @include flex-center;
+        font-family: $title2;
+        color: $gray-900;
+    }
+}

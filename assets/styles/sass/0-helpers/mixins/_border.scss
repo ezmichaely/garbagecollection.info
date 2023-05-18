@@ -1,0 +1,69 @@
+@mixin border-rad($radius) {
+  border-radius: ($radius) !important;
+}
+
+@mixin border-top-rad($radius) {
+  border-top-left-radius: ($radius) !important;
+  border-top-right-radius: ($radius) !important;
+}
+
+@mixin border-right-rad($radius) {
+  border-top-right-radius: ($radius) !important;
+  border-bottom-right-radius: ($radius) !important;
+}
+
+@mixin border-bot-rad($radius) {
+  border-bottom-right-radius: ($radius) !important;
+  border-bottom-left-radius: ($radius) !important;
+}
+
+@mixin border-left-rad($radius) {
+  border-top-left-radius: ($radius) !important;
+  border-bottom-left-radius: ($radius) !important;
+}
+
+@mixin border-tl-rad($radius) {
+  border-top-left-radius: ($radius) !important;
+}
+
+@mixin border-tr-rad($radius) {
+  border-top-right-radius: ($radius) !important;
+}
+
+@mixin border-br-rad($radius) {
+  border-bottom-right-radius: ($radius) !important;
+}
+
+@mixin border-bl-rad($radius) {
+  border-bottom-left-radius: ($radius) !important;
+}
+
+@mixin border($size, $type, $color) {
+  border: $size $type $color !important;
+}
+
+@mixin border-y($size, $type, $color) {
+  border-top: $size $type $color !important;
+  border-bottom: $size $type $color !important;
+}
+
+@mixin border-t($size, $type, $color) {
+  border-top: $size $type $color !important;
+}
+
+@mixin border-b($size, $type, $color) {
+  border-bottom: $size $type $color !important;
+}
+
+@mixin border-x($size, $type, $color) {
+  border-right: $size $type $color !important;
+  border-left: $size $type $color !important;
+}
+
+@mixin border-r($size, $type, $color) {
+  border-right: $size $type $color !important;
+}
+
+@mixin border-l($size, $type, $color) {
+  border-left: $size $type $color !important;
+}

@@ -1,0 +1,72 @@
+.modal {
+    .modal-dialog {
+        .modal-content {
+            .modal-header {
+                background-color: $secondary;
+
+                .modal-title {
+                    color: $gray-900;
+                }
+            }
+
+            .modal-body {
+
+                .modal-warning {
+                    // border: 1px solid red;
+                    @include mp(0);
+                    @include flex-center;
+                    flex-direction: column;
+                    color: $gray-900;
+                    font-weight: 500;
+                    font-style: $text !important;
+
+                    .modal-warning-icon {
+                        i {
+                            font-size: 3rem;
+                            color: $red;
+                        }
+                    }
+
+                    .modal-warning-title {
+                        @include pt(5px);
+                    }
+
+                    .modal-warning-body {
+                        @include pt(5px);
+                    }
+                }
+
+                .form-group {
+                    label {
+                        color: $gray-900;
+                        font-family: $title2;
+                        font-weight: 600;
+                        text-align: left !important;
+                        @include flex-start;
+                    }
+
+                    .select-button {
+                        // border: 1px solid red;
+                        @include flex-end;
+                        flex-direction: row;
+
+                        .select {
+                            flex-grow: 2;
+                        }
+
+                        .button {
+                            @include ml(10px);
+                            // width: 5%;
+                        }
+                    }
+                }
+            }
+
+            .modal-footer {
+                button {
+                    @include ml(10px);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+//margin
+@mixin m($size) {
+  margin: $size !important;
+}
+
+@mixin myx($size, $size1) {
+  margin: $size $size1 !important;
+}
+
+//margin left & right
+@mixin mx($size) {
+  margin-right: $size !important;
+  margin-left: $size !important;
+}
+
+@mixin ml($size) {
+  margin-left: $size !important;
+}
+
+@mixin mr($size) {
+  margin-right: $size !important;
+}
+
+//margin top & bottom
+@mixin my($size) {
+  margin-bottom: $size !important;
+  margin-top: $size !important;
+}
+
+@mixin mt($size) {
+  margin-top: $size !important;
+}
+
+@mixin mb($size) {
+  margin-bottom: $size !important;
+}
+
+//padding
+@mixin p($size) {
+  padding: $size !important;
+}
+
+@mixin pyx($size, $size1) {
+  padding: $size $size1 !important;
+}
+
+//padding left & right
+@mixin px($size) {
+  padding-right: $size !important;
+  padding-left: $size !important;
+}
+
+@mixin pl($size) {
+  padding-left: $size !important;
+}
+
+@mixin pr($size) {
+  padding-right: $size !important;
+}
+
+//padding top & bottom
+@mixin py($size) {
+  padding-bottom: $size !important;
+  padding-top: $size !important;
+}
+
+@mixin pt($size) {
+  padding-top: $size !important;
+}
+
+@mixin pb($size) {
+  padding-bottom: $size !important;
+}
+
+@mixin mp($size) {
+  margin: $size !important;
+  padding: $size !important;
+}

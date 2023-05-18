@@ -1,0 +1,13 @@
+footer {
+    @include mp(0px);
+    @include flex-center;
+    background-color: $secondary;
+
+    p {
+        @include m(0px);
+        @include py(6px);
+        color: $gray-900;
+        font-family: $title2;
+        font-weight: 500;
+    }
+}

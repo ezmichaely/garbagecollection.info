@@ -1,0 +1,30 @@
+{
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe",
+    "liveServer.settings.useWebExt": true,
+    "liveServer.settings.proxy": {
+        "enable": true,
+        "baseUri": "/",
+        "proxyUri": "http://localhost:8080/garbagecollection.info/index.php"
+    },
+
+    "liveSassCompile.settings.autoprefix": [],
+    "liveSassCompile.settings.excludeList": [
+
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
+    "liveSassCompile.settings.formats": [
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/assets/styles/css"
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/assets/styles/css"
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false
+}

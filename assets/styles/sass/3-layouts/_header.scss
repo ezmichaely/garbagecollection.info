@@ -1,0 +1,29 @@
+header#index {
+    @include py(10px);
+    @include border-b(2px, solid, $secondary);
+    background-color: $gray-900;
+
+    .container {
+        @include flex-between;
+
+        img {
+            height: 60px !important;
+        }
+    }
+
+}
+
+header#login {
+    @include py(10px);
+    @include border-b(2px, solid, $secondary);
+    background-color: $gray-900;
+
+    .container {
+        @include flex-center;
+
+        img {
+            height: 60px !important;
+        }
+    }
+
+}

@@ -1,0 +1,12 @@
+body#loginBody {
+    // height: 100vh;
+
+    main#login {
+        // overflow-y: auto;
+        display: flex;
+        justify-content: center;
+        @include my(20px);
+        min-height: calc(100vh - 158px) !important;
+    }
+
+}
